@@ -1,0 +1,182 @@
+body {
+  font-size: 16px !important;
+  font-family: 'Open Sans', sans-serif; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700 !important; }
+
+a {
+  cursor: pointer;
+  text-decoration: none !important; }
+
+ul {
+  padding-inline-start: 30px;
+  list-style-type: none; }
+
+ul li {
+  list-style-type: none; }
+
+blockquote {
+  font-size: 1.7rem; }
+  blockquote:before, blockquote :after {
+    display: block;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: #86c840;
+    color: #fff; }
+  blockquote:before {
+    padding-top: 10px;
+    padding-left: 5px;
+    content: '\f10d';
+    font-family: FontAwesome;
+    position: absolute;
+    left: 0;
+    top: 25%;
+    margin-right: 2rem;
+    font-size: 1.3rem; }
+  blockquote:after {
+    padding-top: 10px;
+    padding-left: 5px;
+    content: '\f10e';
+    font-family: FontAwesome;
+    position: absolute;
+    right: 0;
+    top: 25%;
+    width: 50px;
+    height: 50px;
+    background-color: #86c840;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 1.3rem; }
+
+ul.descriptionData {
+  display: inline;
+  padding-inline-start: 0px !important; }
+  ul.descriptionData li {
+    display: inline; }
+
+.icon {
+  width: 22px;
+  height: 22px;
+  border: 2px #000 solid;
+  border-radius: 50%; }
+
+.nameBlock {
+  border-left: 6px #86c840 solid; }
+
+.imgNews {
+  width: 250px;
+  height: 180px; }
+
+a.buttonNews {
+  width: 130px;
+  font-weight: 600;
+  transition: all 0.7s;
+  padding: 7px;
+  border: 2px transparent solid; }
+
+a.buttonNews:hover {
+  border: 2px #40c840 solid; }
+
+.buttonWork {
+  text-decoration: none !important;
+  display: block;
+  width: 34px;
+  height: 34px;
+  background-color: #86c840;
+  border-radius: 50%;
+  font-weight: 600; }
+
+.buttonWork:hover {
+  background-color: #40c840;
+  color: #fff; }
+
+.buttonPage {
+  position: relative;
+  background-color: #86c840;
+  color: #fff;
+  transition: all 0.7s;
+  font-weight: 600; }
+
+.buttonPage:hover {
+  background-color: #40c840;
+  color: #fff; }
+
+.buttonPage:after {
+  position: absolute;
+  width: 50px;
+  height: 50px; }
+
+.navigation span.logo {
+  color: #86c840;
+  font-weight: 600; }
+
+.navigation a.menuLinkActive {
+  color: #86c840 !important; }
+
+.navigation .menuList ul li a {
+  font-weight: 600;
+  position: relative !important;
+  color: #222; }
+  .navigation .menuList ul li a:hover {
+    color: #40c840; }
+
+section#subscribe {
+  height: 520px; }
+
+section#freeFreebies .imgWorkPlace {
+  height: 220px;
+  width: 100%; }
+
+section#freeFreebies .articleImg {
+  position: relative !important;
+  overflow: hidden; }
+
+section#freeFreebies .contentDescription {
+  display: block;
+  color: #fff;
+  position: absolute;
+  height: 20%;
+  width: 100%;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.884);
+  transition: all 1s;
+  overflow: hidden;
+  top: 100%; }
+
+section#freeFreebies .content:hover .contentDescription {
+  opacity: 1;
+  top: 80%; }
+
+.latestTweets li:before {
+  content: "\f099";
+  /* FontAwesome Unicode */
+  font-family: FontAwesome;
+  display: inline-block;
+  margin-left: -1.3em;
+  /* same as padding-left set on li */
+  width: 1.3em;
+  /* same as padding-left set on li */ }
+
+section#footer .bottomNav li a {
+  font-weight: 600;
+  color: #222 !important;
+  transition: all 0.7s; }
+  section#footer .bottomNav li a:hover {
+    color: #40c840 !important; }
+
+section#footer .socialLink {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  background-color: #222;
+  margin: 0 .5rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: #fff;
+  transition: all 0.7s; }
+  section#footer .socialLink:hover {
+    color: #40c840;
+    box-shadow: 0px 0px 10px #5e5d5d; }
