@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css?family=Acme");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
+@import url("../css/hamburgers.css");
+html {
+  font-size: 16px; }
+
+* {
+  box-sizing: border-box; }
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none; }
+
+h1 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding: 1rem 0;
+  font-family: 'Acme', sans-serif; }
+
+a {
+  text-decoration: none !important;
+  padding: 0; }
+
+.hamburger {
+  border-radius: 10px;
+  padding-bottom: 10px;
+  border: 1px #bdbaba solid;
+  box-shadow: 0 2px 5px #bdbaba; }
+
+body {
+  background-color: #dfdfde;
+  font-family: 'Open Sans', sans-serif;
+  height: 100vh; }
+
+header {
+  height: 120px;
+  background-color: #fff;
+  border-bottom: 1px #919191 solid;
+  box-shadow: 0 0 5px 2px #555555; }
+  header .container {
+    height: 100%; }
+  header nav {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 's l m';
+    align-items: center; }
+    header nav .social-links {
+      grid-area: s; }
+      header nav .social-links ul {
+        display: flex; }
+        header nav .social-links ul li {
+          padding-right: 10px; }
+          header nav .social-links ul li:nth-child(1) a:hover {
+            color: #6e5494; }
+          header nav .social-links ul li:nth-child(2) a:hover {
+            color: #3b5998; }
+          header nav .social-links ul li:nth-child(3) a:hover {
+            color: #dd4b39; }
+          header nav .social-links ul li:nth-child(4) a:hover {
+            color: #e1306c; }
+          header nav .social-links ul li a {
+            width: 35px;
+            height: 35px;
+            font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #dfdfde;
+            color: #000;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px #bdbaba; }
+            header nav .social-links ul li a:hover {
+              box-shadow: 0 2px 5px #797676; }
+    header nav .logo {
+      grid-area: l;
+      font-family: 'Acme', sans-serif;
+      letter-spacing: 3px;
+      font-size: 2rem;
+      text-transform: uppercase;
+      text-align: center; }
+      header nav .logo a {
+        color: #000; }
+        header nav .logo a:hover {
+          color: #333; }
+    header nav .menu-btn {
+      grid-area: m;
+      justify-self: flex-end; }
+
+section#works {
+  margin-top: 2rem; }
+  section#works .work {
+    max-width: 360px;
+    max-height: 210px;
+    border: 5px #fff solid;
+    overflow: hidden;
+    margin: 0 auto;
+    box-shadow: 0 2px 5px #797676; }
+    section#works .work:hover {
+      box-shadow: 0px 5px 10px 3px #a7a7a7; }
+    section#works .work a {
+      display: block;
+      height: 100%;
+      width: 100%; }
+    section#works .work img {
+      width: 100%;
+      height: 100%;
+      margin: 0 auto; }
+
+@media (max-width: 570px) {
+  header nav {
+    padding-top: 10px;
+    grid-template-areas: 's s m' 'l l m'; }
+    header nav .logo {
+      text-align: left; } }
