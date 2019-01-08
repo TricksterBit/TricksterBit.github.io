@@ -1,0 +1,113 @@
+*{
+    box-sizing: border-box;
+}
+a.buttonList{
+    height: 65px;
+    width: 65px;
+    display: block;
+    border: 3px #fff solid;
+    border-radius: 50%;
+    text-decoration: none;
+    color: #fff;
+    font-size: 2rem;
+    transition: all 0.2s ease;
+    &:hover{
+        background: #fff;
+        color: #dc3545;
+    }
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.menu-btn{
+    z-index: 150;
+    position: fixed;
+    right: 30px;
+    top: 30px;
+    border-radius: 50%;
+    box-shadow: 0 0 8px rgba(0,0,0,0.5);
+    display: block;
+    background-color: #fff;
+    width: 55px;
+    height: 55px;
+    cursor: pointer;
+    transition: all 0.7s ease;
+    &:hover{
+        box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    }
+}
+.menu-btn-active{
+
+}
+
+.menuList{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    opacity: 0;
+    transition: all 0.7s ease;
+    right: -100vh;
+}
+.menuListActive{
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    opacity: 1;
+    right: 0;
+}
+section#main{
+    background-position: bottom;
+    background-size: cover;
+    height: 100vh;
+    .overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+section#introducing{
+    .img-introducing{
+        width: 80%;
+        height: 80%;
+    }
+
+    .introList li{
+        list-style-type: none!important;
+        &:nth-child(n):before{
+            font-size: 1rem;
+            position: absolute;
+            left: 0;
+        }
+        &:nth-child(1):before{
+            padding-left: 3px;
+            font-family: FontAwesome!important;
+            font-style: normal!important;
+            content: '\f005';
+            
+        }
+        &:nth-child(2):before{
+            font-family: FontAwesome!important;
+            font-style: normal!important;
+            content: '\f19d';
+            
+        }
+        &:nth-child(3):before{
+            font-family: FontAwesome!important;
+            font-style: normal!important;
+            content: '\f004';
+            
+        }
+        &:nth-child(4):before{
+            font-family: FontAwesome!important;
+            font-style: normal!important;
+            content: '\f155';
+            
+        }
+    }
+    
+}
