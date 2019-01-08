@@ -1,0 +1,190 @@
+$main-color: #3e3362;
+$second-color: #736d89;
+$light-color: #f7f9fa;
+
+*{
+    padding: 0!important;
+}
+.overflow-x{
+    overflow: hidden!important; 
+}
+h1, h2{
+    font-family: 'Nothing You Could Do', cursive;
+}
+h1{
+    font-size: 5rem;
+    font-weight: 300;
+}
+h3{
+    font-weight: 600;
+}
+h4{
+    color: $second-color;
+}
+.text-light{
+    &:hover{
+        text-decoration: none;
+    }
+}
+.main-text{
+    color: $main-color;
+}
+.main-bg{
+    background-color: $main-color;
+}
+body{
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+}
+p{
+    font-weight: 500!important;
+    line-height: 1.5rem;
+}
+.btn{
+    width: 158px!important;
+    height: 48px!important;
+    font-weight: 600;
+    transition: all .2s linear;
+
+}
+.btn-main{
+    color: $main-color;
+    background-color: $light-color!important;
+    border: 4px $main-color solid!important;
+    text-align: center!important;
+    &:hover{
+        cursor: pointer;
+        background-color: $main-color!important;
+        color: $light-color;
+    }
+}
+.arrow-down{
+    position: absolute;
+    bottom: 1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.rectangle{
+    margin: 0 auto;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border: 2px $main-color solid;
+    transform: rotate(45deg);
+    &:after{
+        position: absolute;
+        margin-top: 5px;
+        margin-right: 5px;
+        margin-left: -3px;
+        width: 20px;
+        height: 20px;
+        border: 2px $main-color solid;
+        content: '';
+    }
+}
+.overlay{
+    background: rgba(62, 51, 98, 0.95);
+}
+section#top{
+    background-image: url('../img/background.png');
+    background-size: cover;
+    height: 100vh;
+    min-height: 520px;
+
+    .description-top{
+        p{
+            font-size: 12px;
+            letter-spacing: .6rem;
+        }
+    }
+}
+section#description{
+    .content{
+        background: url('../img/back-overlay.jpg')top center;
+        background-size: cover;
+        min-height: 520px;
+        padding: 0!important;
+    }
+    .left-content{
+        
+        background-color: $main-color;
+    }
+    .right-content{
+        background: url('../img/Bird.jpg') center center no-repeat;
+        background-size: cover;
+    }
+}
+section#posts{
+    .post-1{
+        background: url('../img/post1.jpg') center center;
+        background-size: cover!important;
+        min-height: 395px!important;
+    }
+    .post-2{
+        background: url('../img/post2.jpg') center center;
+        background-size: cover!important;
+        min-height: 455px!important;
+    }
+    .post-3{
+        background: url('../img/post3.jpg') center center;
+        background-size: cover!important;
+        min-height: 570px!important;
+    }
+    .post-4{
+        background: url('../img/post4.jpg') center center;
+        background-size: cover!important;
+        min-height: 280px!important;
+    }
+}
+section#footer{
+    border-bottom: 24px #2b2344 solid;
+}
+
+@media (max-width: 992px) {
+    section#posts{
+        .post-1{
+            background: url('../img/post1.jpg') center center;
+            background-size: cover!important;
+            min-height: 200px!important;
+        }
+        .post-2{
+            background: url('../img/post2.jpg') center center;
+            background-size: cover!important;
+            min-height: 200px!important;
+        }
+        .post-3{
+            background: url('../img/post3.jpg') center center;
+            background-size: cover!important;
+            min-height: 200px!important;
+        }
+        // .post-4{
+        //     background: url('../img/post4.jpg') center center;
+        //     background-size: cover!important;
+        //     min-height: 200px!important;
+        // }
+    }
+}
+@media (max-width: 576px) { 
+    section#posts{
+        .post-1{
+            background: url('../img/post1.jpg') center center;
+            background-size: cover!important;
+            min-height: 200px!important;
+        }
+        .post-2{
+            background: url('../img/post2.jpg') center center;
+            background-size: cover!important;
+            min-height: 200px!important;
+        }
+        .post-3{
+            background: url('../img/post3.jpg') center center;
+            background-size: cover!important;
+            min-height: 200px!important;
+        }
+        // .post-4{
+        //     background: url('../img/post4.jpg') center center;
+        //     background-size: cover!important;
+        //     min-height: 200px!important;
+        // }
+    }
+}
